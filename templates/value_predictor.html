@@ -1,0 +1,436 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="mx-5 my-5">
+    <h1>Airbnb Price Predictor</h1>
+    <!--<a href="/insert"> To insert values click here</a>-->
+    <form method="post">
+        <div class="form-group row">
+            <label class="col-4 col-form-label">Property Type</label>
+            <div class="col-8">
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="Apartment"
+                            required="required">
+                        <label for="radio_0" class="custom-control-label">Apartment</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="House"
+                            required="required">
+                        <label for="radio_1" class="custom-control-label">House</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_2" type="radio" class="custom-control-input" value="Condominium"
+                            required="required">
+                        <label for="radio_2" class="custom-control-label">Condominium</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_3" type="radio" class="custom-control-input" value="Townhouse"
+                            required="required">
+                        <label for="radio_3" class="custom-control-label">Townhouse</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_4" type="radio" class="custom-control-input" value="Loft"
+                            required="required">
+                        <label for="radio_4" class="custom-control-label">Loft</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_5" type="radio" class="custom-control-input" value="Guesthouse"
+                            required="required">
+                        <label for="radio_5" class="custom-control-label">Guesthouse</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_6" type="radio" class="custom-control-input"
+                            value="Bed & Breakfast" required="required">
+                        <label for="radio_6" class="custom-control-label">Bed & Breakfast</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_7" type="radio" class="custom-control-input" value="Bungalow"
+                            required="required">
+                        <label for="radio_7" class="custom-control-label">Bungalow</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_8" type="radio" class="custom-control-input" value="Villa"
+                            required="required">
+                        <label for="radio_8" class="custom-control-label">Villa</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_9" type="radio" class="custom-control-input" value="Dorm"
+                            required="required">
+                        <label for="radio_9" class="custom-control-label">Dorm</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_10" type="radio" class="custom-control-input" value="Guest suite"
+                            required="required">
+                        <label for="radio_10" class="custom-control-label">Guest suite</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_11" type="radio" class="custom-control-input" value="Camper/RV"
+                            required="required">
+                        <label for="radio_11" class="custom-control-label">Camper/RV</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_12" type="radio" class="custom-control-input" value="Timeshare"
+                            required="required">
+                        <label for="radio_12" class="custom-control-label">Timeshare</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_13" type="radio" class="custom-control-input" value="Cabin"
+                            required="required">
+                        <label for="radio_13" class="custom-control-label">Cabin</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_14" type="radio" class="custom-control-input" value="In-law"
+                            required="required">
+                        <label for="radio_14" class="custom-control-label">In-law</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_15" type="radio" class="custom-control-input" value="Hostel"
+                            required="required">
+                        <label for="radio_15" class="custom-control-label">Hostel</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_16" type="radio" class="custom-control-input"
+                            value="Boutique hotel" required="required">
+                        <label for="radio_16" class="custom-control-label">Boutique hotel</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_17" type="radio" class="custom-control-input" value="Boat"
+                            required="required">
+                        <label for="radio_17" class="custom-control-label">Boat</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_18" type="radio" class="custom-control-input"
+                            value="Serviced apartment" required="required">
+                        <label for="radio_18" class="custom-control-label">Serviced apartment</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_19" type="radio" class="custom-control-input" value="Tent"
+                            required="required">
+                        <label for="radio_19" class="custom-control-label">Tent</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_20" type="radio" class="custom-control-input" value="Castle"
+                            required="required">
+                        <label for="radio_20" class="custom-control-label">Castle</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_21" type="radio" class="custom-control-input"
+                            value="Vacation home" required="required">
+                        <label for="radio_21" class="custom-control-label">Vacation home</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_22" type="radio" class="custom-control-input" value="Yurt"
+                            required="required">
+                        <label for="radio_22" class="custom-control-label">Yurt</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_23" type="radio" class="custom-control-input" value="Hut"
+                            required="required">
+                        <label for="radio_23" class="custom-control-label">Hut</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_24" type="radio" class="custom-control-input" value="Treehouse"
+                            required="required">
+                        <label for="radio_24" class="custom-control-label">Treehouse</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_25" type="radio" class="custom-control-input" value="Chalet"
+                            required="required">
+                        <label for="radio_25" class="custom-control-label">Chalet</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_26" type="radio" class="custom-control-input" value="Earth House"
+                            required="required">
+                        <label for="radio_26" class="custom-control-label">Earth House</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_27" type="radio" class="custom-control-input" value="Tipi"
+                            required="required">
+                        <label for="radio_27" class="custom-control-label">Tipi</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_28" type="radio" class="custom-control-input" value="Train"
+                            required="required">
+                        <label for="radio_28" class="custom-control-label">Train</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_29" type="radio" class="custom-control-input" value="Cave"
+                            required="required">
+                        <label for="radio_29" class="custom-control-label">Cave</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_30" type="radio" class="custom-control-input"
+                            value="Parking Space" required="required">
+                        <label for="radio_30" class="custom-control-label">Parking Space</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_31" type="radio" class="custom-control-input" value="Lighthouse"
+                            required="required">
+                        <label for="radio_31" class="custom-control-label">Lighthouse</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_32" type="radio" class="custom-control-input" value="Island"
+                            required="required">
+                        <label for="radio_32" class="custom-control-label">Island</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_33" type="radio" class="custom-control-input"
+                            value="Casa particular" required="required">
+                        <label for="radio_33" class="custom-control-label">Casa particular</label>
+                    </div>
+                </div>
+                <div class="custom-controls-inline">
+                    <div class="custom-control custom-radio">
+                        <input name="radio" id="radio_34" type="radio" required="required" class="custom-control-input"
+                            value="Other">
+                        <label for="radio_34" class="custom-control-label">Other</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-4">Room Type</label>
+            <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio1" id="radio1_0" type="radio" required="required" class="custom-control-input"
+                        value="Entire home/apt">
+                    <label for="radio1_0" class="custom-control-label">Entire home/apt</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio1" id="radio1_1" type="radio" required="required" class="custom-control-input"
+                        value="Private room">
+                    <label for="radio1_1" class="custom-control-label">Private room</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio1" id="radio1_2" type="radio" required="required" class="custom-control-input"
+                        value="Shared room">
+                    <label for="radio1_2" class="custom-control-label">Shared room</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-4">Bed Type</label>
+            <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio2" id="radio2_0" type="radio" required="required" class="custom-control-input"
+                        value="Real Bed">
+                    <label for="radio2_0" class="custom-control-label">Real Bed</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio2" id="radio2_1" type="radio" required="required" class="custom-control-input"
+                        value="Futon">
+                    <label for="radio2_1" class="custom-control-label">Futon</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio2" id="radio2_2" type="radio" required="required" class="custom-control-input"
+                        value="Pull-out Sofa">
+                    <label for="radio2_2" class="custom-control-label">Pull-out Sofa</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio2" id="radio2_3" type="radio" required="required" class="custom-control-input"
+                        value="Airbed">
+                    <label for="radio2_3" class="custom-control-label">Airbed</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio2" id="radio2_4" type="radio" required="required" class="custom-control-input"
+                        value="Couch">
+                    <label for="radio2_4" class="custom-control-label">Couch</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-4">Cancellation Policy</label>
+            <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio3" id="radio3_0" type="radio" required="required" class="custom-control-input"
+                        value="strict">
+                    <label for="radio3_0" class="custom-control-label">Strict</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio3" id="radio3_1" type="radio" required="required" class="custom-control-input"
+                        value="flexible">
+                    <label for="radio3_1" class="custom-control-label">Flexible</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio3" id="radio3_2" type="radio" required="required" required="required"
+                        class="custom-control-input" value="moderate">
+                    <label for="radio3_2" class="custom-control-label">Moderate</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio3" id="radio3_3" type="radio" required="required" class="custom-control-input"
+                        value="super_strict_30">
+                    <label for="radio3_3" class="custom-control-label">Super Strict 30</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio3" id="radio3_4" type="radio" required="required" class="custom-control-input"
+                        value="super_strict_60">
+                    <label for="radio3_4" class="custom-control-label">Super Strict 60</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-4">Cleaning Fee</label>
+            <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio4" id="radio4_0" type="radio" required="required" class="custom-control-input"
+                        value="True">
+                    <label for="radio4_0" class="custom-control-label">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio4" id="radio4_1" type="radio" required="required" class="custom-control-input"
+                        value="False">
+                    <label for="radio4_1" class="custom-control-label">No</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-4">City</label>
+            <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio5" id="radio5_0" type="radio" required="required" class="custom-control-input"
+                        value="NYC">
+                    <label for="radio5_0" class="custom-control-label">New York City</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio5" id="radio5_1" type="radio" required="required" class="custom-control-input"
+                        value="LA">
+                    <label for="radio5_1" class="custom-control-label">Los Angeles</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio5" id="radio5_2" type="radio" required="required" class="custom-control-input"
+                        value="SF">
+                    <label for="radio5_2" class="custom-control-label">San Francisco</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio5" id="radio5_3" type="radio" required="required" class="custom-control-input"
+                        value="DC">
+                    <label for="radio5_3" class="custom-control-label">DC</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio5" id="radio5_4" type="radio" required="required" class="custom-control-input"
+                        value="Chicago">
+                    <label for="radio5_4" class="custom-control-label">Chicago</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio5" id="radio5_5" type="radio" required="required" class="custom-control-input"
+                        value="Boston">
+                    <label for="radio5_5" class="custom-control-label">Boston</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-4">Instant Bookable</label>
+            <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio6" id="radio6_0" type="radio" required="required" class="custom-control-input"
+                        value="t">
+                    <label for="radio6_0" class="custom-control-label">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input name="radio6" id="radio6_1" type="radio" required="required" class="custom-control-input"
+                        value="f">
+                    <label for="radio6_1" class="custom-control-label">No</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="text" class="col-4 col-form-label">Number of accomodates</label>
+            <div class="col-8">
+                <input id="text" name="text" placeholder="Enter value in number" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="text1" class="col-4 col-form-label">Number of Bathrooms</label>
+            <div class="col-8">
+                <input id="text1" name="text1" placeholder="Enter value in number" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="text2" class="col-4 col-form-label">Number of Bedrooms</label>
+            <div class="col-8">
+                <input id="text2" name="text2" placeholder="Enter value in number" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="text3" class="col-4 col-form-label">Enter number of beds</label>
+            <div class="col-8">
+                <input id="text3" name="text3" placeholder="Enter value in number" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="offset-4 col-8">
+                <input type="submit">
+            </div>
+        </div>
+    </form>
+    <div class="my-5">
+    <h1> Predicted Value is: {{result}}</h1></div>
+</div>
